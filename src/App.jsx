@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import { RecoilRoot, useSetRecoilState } from "recoil";
 import { userState } from "./store/atom/user";
 import PurchasedCourses from "./components/PurchasedCourses";
+import LearnCourse from "./components/LearnCourse";
 import { useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "./config";
@@ -35,6 +36,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/courses/:courseId" element={<UpdateCourse />} />
+            <Route path="/learn/:courseId" element={<LearnCourse />} />
           </Routes>
         </Router>
       </div>

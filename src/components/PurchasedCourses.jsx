@@ -76,7 +76,7 @@ const Courses = () => {
                     Rs. {course.price}
                   </Typography> */}
                   <Button
-                    // onClick={() => navigate("/course/" + course._id)}
+                    onClick={() => navigate("/learn/" + course._id)}
                     variant="contained"
                     style={{ marginRight: "10px" }}
                   >
